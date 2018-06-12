@@ -1,0 +1,12 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="true">
+    <item android:drawable="@drawable/dirt_nothing" android:duration="100"/>
+    <item android:drawable="@drawable/shatter_pond_a" android:duration="300"/>
+    <item android:drawable="@drawable/shatter_pond_b" android:duration="300"/>
+    <item android:drawable="@drawable/shatter_pond_c" android:duration="300"/>
+    <item android:drawable="@drawable/shatter_pond_d" android:duration="300"/>
+    <item android:drawable="@drawable/shatter_pond_e" android:duration="300"/>
+    <item android:drawable="@drawable/shatter_pond_f" android:duration="300"/>
+    <item android:drawable="@drawable/shatter_pond_g" android:duration="300"/>
+    <item android:drawable="@drawable/shatter_pond_h" android:duration="300"/>
+    <item android:drawable="@drawable/dirt_nothing" android:duration="100"/>
+</animation-list>

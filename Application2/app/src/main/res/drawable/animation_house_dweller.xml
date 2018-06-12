@@ -1,0 +1,4 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:drawable="@drawable/house_dweller_a" android:duration="700"/>
+    <item android:drawable="@drawable/house_dweller_b" android:duration="700"/>
+</animation-list>

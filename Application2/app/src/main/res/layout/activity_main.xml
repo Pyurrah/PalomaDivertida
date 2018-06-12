@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    tools:context="com.example.amy.application2.MainActivity">
+
+    <com.example.amy.application2.Painting
+        android:id="@+id/painting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/clear"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/clear"
+        android:layout_marginTop="11dp"
+        android:text="What concerns you?"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/usual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:onClick="CONTINUE"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/painting"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:onClick="CLEAR"
+        android:text="Clear"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:typeface="serif"
+        tools:ignore="NotSibling" />
+
+    <Button
+        android:id="@+id/button_blue"
+        android:layout_width="31dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@+id/usual"
+        android:layout_marginStart="1dp"
+        android:layout_toEndOf="@+id/button_white"
+        android:background="#0011cc"
+        android:onClick="blue" />
+
+    <Button
+        android:id="@+id/button_grey"
+        android:layout_width="31dp"
+        android:layout_height="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_toEndOf="@+id/button_white"
+        android:background="@android:color/darker_gray"
+        android:onClick="grey" />
+
+    <Button
+        android:id="@+id/button_green"
+        android:layout_width="31dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@+id/usual"
+        android:layout_marginEnd="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_toLeftOf="@+id/button_black"
+        android:layout_toStartOf="@+id/button_black"
+        android:background="#3cff00"
+        android:onClick="green" />
+
+    <Button
+        android:id="@+id/button_magenta"
+        android:layout_width="31dp"
+        android:layout_height="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button_green"
+        android:background="#d138f2"
+        android:onClick="magenta" />
+
+    <Button
+        android:id="@+id/button_black"
+        android:layout_width="31dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@+id/usual"
+        android:layout_marginEnd="1dp"
+        android:layout_toStartOf="@+id/button_white"
+        android:background="#000000"
+        android:onClick="black" />
+
+    <Button
+        android:id="@+id/button_red"
+        android:layout_width="31dp"
+        android:layout_height="24dp"
+        android:layout_alignLeft="@+id/button_black"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button_black"
+        android:background="@android:color/holo_red_dark"
+        android:onClick="red" />
+
+    <Button
+        android:id="@+id/button_white"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:drawable/ic_menu_edit"
+        android:onClick="white"
+        android:text="Erase"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/button_yellow"
+        android:layout_width="31dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@+id/usual"
+        android:layout_marginStart="1dp"
+        android:layout_toEndOf="@+id/button_blue"
+        android:background="#ecff16"
+        android:onClick="yellow" />
+
+    <Button
+        android:id="@+id/button_darkGreen"
+        android:layout_width="31dp"
+        android:layout_height="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_toEndOf="@+id/button_blue"
+        android:background="#005604"
+        android:onClick="darkGreen" />
+
+
+</RelativeLayout>
